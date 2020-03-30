@@ -1,6 +1,36 @@
+.main-page {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+.main-page-navigation{
+  width: 40%;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 0rem 3rem 4rem;
+}
+.main-page-illustration {
+  width: 60%;
+}
+.main-page-illustration img {
+  height: 100vh;
+  width: auto;
+  position: absolute;
+  right: 0;
+}
 header .masthead {
   background-color: #fff;
-  /* margin-top: 10rem; */
+}
+.main-page-navigation .navbar-brand {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  font-size: 1.5rem;
+}
+.main-page-navigation .navbar-nav .nav-link {
+  padding: 3px 0px;
+  color: #000;
+  font-size: 0.9rem;
 }
 header.masthead .banner img {
     width: auto;
