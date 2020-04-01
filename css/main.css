@@ -1,3 +1,14 @@
+/*#region common*/
+.btn-xl {
+  padding: .6rem 2.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0.3rem;
+}
+/*#endregion*/
+
 .main-page {
   display: flex;
   flex-wrap: wrap;
@@ -77,6 +88,22 @@ header.masthead .banner img {
 header.masthead .banner {
   margin-top: 2rem;
 }
+
+/*#region call to action*/
+#getajob {
+  padding: 4rem 0;
+  background-color: #FFC735;
+}
+.cta-description {
+  padding: 4rem 0;
+}
+.cta-description h2 {
+  margin-bottom: 0.5rem!important;
+}
+/*#endregion*/
+
+
+
 @media screen and (min-width: 1200px) {
 header.masthead {
     height: 100vh;
