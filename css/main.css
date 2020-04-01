@@ -1,4 +1,7 @@
 /*#region common*/
+body, html {
+  font-family: 'Comfortaa','Open Sans', sans-serif;
+}
 .btn-xl {
   padding: .6rem 2.25rem;
   font-size: 0.85rem;
@@ -19,7 +22,7 @@
   justify-content: space-between;
   display: flex;
   flex-direction: column;
-  padding: 3rem 0rem 3rem 4rem;
+  padding: 3rem 0rem 3rem 6rem;
 }
 .main-page-illustration {
   width: 60%;
@@ -56,39 +59,49 @@ header.masthead .banner img {
   padding: 5rem;
   font-size: 1.25rem;
 }
+
+/*#region process*/
+#process {
+  background-image: linear-gradient(#FFF3D2, #fff);
+  position: relative;
+  padding: 5rem 0;
+}
 #process .process-item {
-    background: #F26522;
-    border-radius: 8px;
-    padding: 5rem 2rem;
-    position: relative;
-    min-height: 505px;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  margin-bottom: 3rem;
 }
-#process .process-item .process-img {
-  padding: 1rem 0;
-  height: 134px;
+#process .process-item .process-item-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #FFC93D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#process .process-item .process-title {
-  height: 84px;
-}
-#process .process-step {
-  position: absolute;
-  height: 50px;
-  width: 50px;
+#process .process-section-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   left: 50%;
   margin-left: -25px;
   top: -5%;
-  border-radius: 50%;
-  background-color: #fff;
-  border: 1px solid #222222;
 }
-#process .process-step .inner-number {
-  margin: .7rem;
+#process .process-item .process-item-info .info-header {
+  color: #000;
+  font-weight: bold;
 }
-header.masthead .banner {
-  margin-top: 2rem;
+#process .process-item .process-item-info .info-content {
+  color: #7D7D7D;
 }
-
+/*#endregion*/
 /*#region call to action*/
 #getajob {
   padding: 4rem 0;
