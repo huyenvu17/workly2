@@ -49,33 +49,41 @@ header .masthead {
 header.masthead .banner img {
     width: auto;
 }
-#benefits .container .row {
-  margin: 5rem auto;
-}
-#benefits .container .row:nth-child(even) {
-  flex-direction: row-reverse;
-}
-#benefits .container .row .item-intro {
-  padding: 5rem;
-  font-size: 1.25rem;
-}
+
 /*#region benefits*/
 #benefits {
-  background-image: url(../img/reasonbg.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  position: relative;
+  margin-bottom: 8rem;
 }
+.benefits-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-left: 1rem;
+}
+.benefits-illustration-large {
+  position: absolute;
+  top: 0;
+  left: 10%;
+}
+.benefits-illustration-small {
+  position: absolute;
+  right: 15%;
+  top: 40%;
+}
+#benefits .container .row {
+  margin: 2rem auto;
+} 
+
 #benefits .benefit-item {
     background: #fff;
-    -webkit-box-shadow: 0px 0px 22px 2px rgba(204,204,204,1);
-    -moz-box-shadow: 0px 0px 22px 2px rgba(204,204,204,1);
-    box-shadow: 0px 0px 22px 2px rgba(204,204,204,1);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(175, 175, 175, 0.5);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(175, 175, 175, 0.5);
+    box-shadow: 0px 0px 10px 0px rgba(175, 175, 175, 0.5);
     background-color: white;
     border-radius: 10px;
     padding: 1.5rem 2rem;
 }
-}
+
 /*#endregion*/
 /*#region process*/
 #process {
@@ -110,6 +118,9 @@ header.masthead .banner img {
   left: 50%;
   margin-left: -25px;
   top: -5%;
+  -webkit-box-shadow: 0px 0px 22px 2px rgb(255, 245, 218);
+  -moz-box-shadow: 0px 0px 22px 2px rgb(255, 245, 218);
+  box-shadow: 0px 0px 22px 2px rgb(255, 245, 218);
 }
 #process .process-item .process-item-info .info-header {
   color: #000;
@@ -133,51 +144,116 @@ header.masthead .banner img {
 /*#endregion*/
 
 
+/*#region responsive*/
+@media screen and (min-width: 1920px) {
+  .benefits-illustration-small {
+    position: absolute;
+    right: 20%;
+    top: 40%;
+    transition: 0.2s all ease;
+  }
+  .benefits-illustration-large {
+    position: absolute;
+    top: 0;
+    left: 18%;
+    transition: 0.2s all ease;
+}
 
+}
+
+@media screen and (max-width: 1600px) {
+  .benefits-illustration-large {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    transition: 0.2s all ease;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .benefits-illustration-large {
+    position: absolute;
+    top: 0;
+    left: 8%;
+    transition: 0.2s all ease;
+  }
+  .benefits-illustration-small {
+    position: absolute;
+    right: 10%;
+    top: 40%;
+    transition: 0.2s all ease;
+}
+
+}
+@media screen and (max-width: 1280px) {
+  .benefits-illustration-large {
+    position: absolute;
+    top: 0;
+    left: 2%;
+    transition: 0.2s all ease;
+  }
+}
 @media screen and (min-width: 1200px) {
-header.masthead {
-    height: 100vh;
-    min-height: 40rem;
-    padding-top: 140px;
-    padding-bottom: 0;
-}
-header.masthead .banner img {
-  width: 95%;
-}
-
-}
-@media screen and (max-width: 1200px) {
-    header.masthead .banner img {
+  header.masthead {
+      height: 100vh;
+      min-height: 40rem;
+      padding-top: 140px;
+      padding-bottom: 0;
+  }
+  header.masthead .banner img {
+    width: 95%;
+  }
+  
+  }
+  @media screen and (max-width: 1200px) {
+      header.masthead .banner img {
+        width: 100%;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    #benefits .container .row:nth-child(even) {
+      flex-direction: row;
+    }
+    #benefits .container .row img{
       width: 100%;
+    }
+    .page-section {
+      padding: 0;
+    }
+    .benefits-illustration-large, .benefits-illustration-small {
+      display: none;
+    }
   }
-}
-@media screen and (max-width: 768px) {
-  #benefits .container .row:nth-child(even) {
-    flex-direction: row;
+  @media screen and (max-width: 1024px) {
+    #getajob {
+      margin: 5rem auto;
+    }
+    .main-page-illustration img {
+      height: 100vh;
+      width: 100%;
+      position: initial;
+      right: 0;
+    }
+    .main-page-illustration img {
+      height: auto;
+      width: 100%;
+      position: initial;
+      right: 0;
+    }
+    #benefits .container .row {
+      margin: 0;
+    }
+    #benefits .container .row .mg-responsive {
+      margin-bottom: 1rem;
+    }
   }
-  #benefits .container .row img{
-    width: 100%;
+  @media screen and (max-width: 552px) {
+  
+    #benefits .container .row img{
+      width: 80%;
+      margin: auto;
+    }
+  
   }
-  .page-section {
-    padding: 0;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .masthead {
-    margin-top: 8rem;
-  }
-  #getajob {
-    margin: 5rem auto;
-  }
-  header.masthead .banner {
-    margin: 2rem auto;
-}
-}
-@media screen and (max-width: 552px) {
+  
+/*#endregion*/
 
-  #benefits .container .row img{
-    width: 80%;
-    margin: auto;
-  }
-
-}
