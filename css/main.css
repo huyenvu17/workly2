@@ -59,7 +59,24 @@ header.masthead .banner img {
   padding: 5rem;
   font-size: 1.25rem;
 }
-
+/*#region benefits*/
+#benefits {
+  background-image: url(../img/reasonbg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#benefits .benefit-item {
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 22px 2px rgba(204,204,204,1);
+    -moz-box-shadow: 0px 0px 22px 2px rgba(204,204,204,1);
+    box-shadow: 0px 0px 22px 2px rgba(204,204,204,1);
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem 2rem;
+}
+}
+/*#endregion*/
 /*#region process*/
 #process {
   background-image: linear-gradient(#FFF3D2, #fff);
