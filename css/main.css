@@ -36,7 +36,8 @@ body, html {
 header .masthead {
   background-color: #fff;
 }
-.main-page-navigation .navbar-brand {
+.main-page-navigation .navbar-brand, #mainNav .navbar-brand {
+  font-family: 'Comfortaa','Open Sans', sans-serif;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
   font-size: 1.5rem;
