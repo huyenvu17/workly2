@@ -49,7 +49,11 @@ header .masthead {
 header.masthead .banner img {
     width: auto;
 }
-
+/*#region main page*/
+.main-page-heading {
+  font-size: 2.5rem;
+}
+/*#endregion*/
 /*#region benefits*/
 #benefits {
   position: relative;
@@ -173,7 +177,7 @@ header.masthead .banner img {
   .benefits-illustration-large {
     position: absolute;
     top: 0;
-    left: 8%;
+    left: 5%;
     transition: 0.2s all ease;
   }
   .benefits-illustration-small {
@@ -210,6 +214,10 @@ header.masthead .banner img {
     }
   }
   @media screen and (max-width: 768px) {
+    .main-page-heading {
+      font-size: 1.8rem;
+    }
+    
     #benefits .container .row:nth-child(even) {
       flex-direction: row;
     }
@@ -219,14 +227,43 @@ header.masthead .banner img {
     .page-section {
       padding: 0;
     }
-    .benefits-illustration-large, .benefits-illustration-small {
-      display: none;
+    .benefits-illustration-large img{
+      transition: 0.2s all ease;
+      width: 60%;
+    }
+    #benefits {
+      position: relative;
+      margin: 1rem 0 0rem!important;
+      padding: 7rem 0 5rem!important;
+    }
+    .benefits-title {
+      font-size: 1rem;
+      font-weight: bold;
+      margin-left: 0.5rem;
+    }
+    .benefits-illustration-large {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: 0.2s all ease;
     }
   }
   @media screen and (max-width: 1024px) {
     #getajob {
       margin: 5rem auto;
     }
+    .main-page {
+      display: flex;
+      flex-wrap: wrap;
+      height: auto;
+  }
+    .main-page-navigation {
+      width: 40%;
+      justify-content: space-between;
+      display: flex;
+      flex-direction: column;
+      padding: 3rem 0rem 2rem 4rem;
+  }
     .main-page-illustration img {
       height: 100vh;
       width: 100%;
@@ -239,20 +276,132 @@ header.masthead .banner img {
       position: initial;
       right: 0;
     }
+    #benefits {
+      position: relative;
+      margin: 3rem 0 8rem;
+      padding: 12rem 0 5rem;
+  }
     #benefits .container .row {
       margin: 0;
     }
     #benefits .container .row .mg-responsive {
       margin-bottom: 1rem;
     }
+    .benefits-illustration-large {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: 0.2s all ease;
+  }
+  }
+  @media screen and (max-width: 640px) {
+    .benefits-illustration-large, .benefits-illustration-small {
+      display: none;
+    }
+    #benefits .container .row .mg-responsive {
+      padding: 0rem 3rem;
+    }
+    #process {
+      padding: 4rem 0rem 2rem;
+    }
+    #process .process-item .process-item-info .info-header {
+      text-align: left;
+    }
+    #process .process-item .process-item-image {
+      margin: auto;
+      margin-bottom: 1rem;
+      width: 50px;
+      height: 50px;
+    }
+    #process .process-item .process-item-image img {
+      width: 50%;
+    }
+    .process-section-flow {
+      padding: 0rem 5rem;
+      text-align: justify;
+    }
+    #process .process-heading {
+      font-size: 1.2rem;
+      font-weight: bold;
+      padding: 0rem 3rem;
+    }
+    .main-page-navigation {
+      padding: 1rem 0rem 0rem 1.5rem;
+    }
+    .main-page-navigation .navbar-brand {
+      font-size: 1rem;
+    }
+    .main-page-navigation .navbar-nav .nav-link {
+      padding: 0.1rem;
+      color: #000;
+      font-size: 0.5rem;
+    }
+    .main-page-heading {
+      font-size: 0.9rem;
+    }
+    .main-page-short-intro {
+      font-size: 0.5rem;
+    }
+    .main-page-short-intro .btn {
+      padding: 0.3rem 0.9rem;
+      font-size: 0.4rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 0.2rem;
+      margin-top: 0.3rem!important;
+    }
+    #benefits {
+      position: relative;
+      margin: 2rem 0 0rem!important;
+      padding: 1rem 0 4rem!important;
+    }
+    .benefits-brand-image {
+      text-align: center;
+    }
+    #benefits .container .row img{
+      width: 70%;
+      margin: auto;
+    }
+    #benefits .benefit-item {
+      padding: 1.5rem 2rem;
+      font-size: 0.7rem;
+    }
+    .benefits-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-left: 0rem;
+    }
+    .process-item-info {
+      font-size: 0.8rem;
+    }
+    #process .process-item {
+      margin-bottom: 1rem;
+    }
+    #getajob {
+      margin: 0rem auto;
+      padding: 0rem 1.5rem 2rem;
+      text-align: justify;
+    }
+    .cta-description {
+      text-align: center;
+      font-size: 0.6rem;
+      padding: 3rem 0 1rem;
+    }
+    .cta-description h2 {
+      font-size: 1rem;
+    }
+    .cta-image {
+      text-align: center;
+    }
+    .cta-image img {
+      width: 60%;
+    }
+  
   }
   @media screen and (max-width: 552px) {
   
-    #benefits .container .row img{
-      width: 80%;
-      margin: auto;
-    }
-  
+
   }
   
 /*#endregion*/
