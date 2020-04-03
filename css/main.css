@@ -57,7 +57,7 @@ header.masthead .banner img {
 /*#region benefits*/
 #benefits {
   position: relative;
-  margin-bottom: 8rem;
+  margin: 3rem 0rem 5rem;
 }
 .benefits-title {
   font-size: 1.4rem;
@@ -249,9 +249,6 @@ header.masthead .banner img {
     }
   }
   @media screen and (max-width: 1024px) {
-    #getajob {
-      margin: 5rem auto;
-    }
     .main-page {
       display: flex;
       flex-wrap: wrap;
@@ -292,7 +289,16 @@ header.masthead .banner img {
       top: 0;
       left: 0;
       transition: 0.2s all ease;
-  }
+    }
+    #process {
+      background-image: linear-gradient(#FFF3D2, #fff);
+      position: relative;
+      padding: 5rem 0 1rem;
+    }
+    #getajob {
+      padding: 4rem 3rem;
+      background-color: #FFC735;
+    }
   }
   @media screen and (max-width: 640px) {
     .benefits-illustration-large, .benefits-illustration-small {
