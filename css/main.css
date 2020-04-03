@@ -214,7 +214,7 @@ header.masthead .banner img {
     }
   }
   @media screen and (max-width: 768px) {
-    .main-page-heading {
+    .main-page-heading, .main-page-mobile-heading {
       font-size: 1.8rem;
     }
     
@@ -246,6 +246,15 @@ header.masthead .banner img {
       top: 0;
       left: 0;
       transition: 0.2s all ease;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .main-page {
+      display: none!important;
+    }
+    .main-page-mobile {
+      margin-top: 7rem;
+      text-align: center;
     }
   }
   @media screen and (max-width: 1024px) {
@@ -347,6 +356,9 @@ header.masthead .banner img {
     }
     .main-page-short-intro {
       font-size: 0.5rem;
+    }
+    .main-page-short-intro-mobile {
+      font-size: 0.8rem;
     }
     .main-page-short-intro .btn {
       padding: 0.3rem 0.9rem;
