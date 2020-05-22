@@ -1,7 +1,5 @@
 /*#region common*/
-body, html {
-  font-family: 'Comfortaa','Open Sans', sans-serif;
-}
+
 .btn-xl {
   padding: .6rem 2.25rem;
   font-size: 0.85rem;
@@ -11,6 +9,8 @@ body, html {
   border-radius: 0.3rem;
 }
 /*#endregion*/
+
+/*#region main page*/
 
 .main-page {
   display: flex;
@@ -50,7 +50,6 @@ header .masthead {
 header.masthead .banner img {
     width: auto;
 }
-/*#region main page*/
 .main-page-heading {
   font-size: 2.5rem;
 }
@@ -147,8 +146,6 @@ header.masthead .banner img {
   margin-bottom: 0.5rem!important;
 }
 /*#endregion*/
-
-
 /*#region responsive*/
 @media screen and (min-width: 1920px) {
   .benefits-illustration-small {
@@ -424,4 +421,5 @@ header.masthead .banner img {
   }
   
 /*#endregion*/
+
 
